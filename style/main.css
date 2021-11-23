@@ -1,0 +1,173 @@
+:root{
+    --vermelho: #c90610;
+    --preto: #141414;
+}
+
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Rubik', sans-serif;
+}
+
+/* header */
+
+/* flex geral menu/header */
+.barraMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* flex título + opções menu */
+.flex-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* flex icones e perfil */
+.flex-icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* configurações título + opções menu */
+.barraMenu h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: var(--vermelho);
+    margin-left: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.menuItens{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.menuItens a{
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+.menuItens a:hover{
+    color: white;
+}
+
+/* configurações ícones e perfil */
+.flex-icones img{
+    margin-right: 40px;
+}
+
+/* body */
+
+/* div filme principal*/
+.container-principal{
+    margin-left: 30px;
+    width: 55%;
+}
+
+.filme-principal{
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url("/img/castelo-fundo.jpg");
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    
+}
+
+.filme-principal .descricao-principal{
+    margin-bottom: 40px;
+    
+}
+
+.filme-principal .titulo-principal{
+    font-size: 50px;
+    font-family: 'Asul', sans-serif;
+  
+    margin-bottom: 10px;
+}
+
+/* botoes */
+
+#botao1{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: #141414;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    border-radius:5px;
+    cursor: pointer;
+
+    margin-right: 15px;
+}
+#botao1:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+#botao2{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    border-radius:5px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+#botao2:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes i{
+    margin-right: 8px;
+}
+
+/* div carrossel*/
+.carrossel-filmes{
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.carrossel-filmes h4{
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}

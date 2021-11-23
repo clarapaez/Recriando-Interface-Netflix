@@ -1,0 +1,81 @@
+@media screen and (max-width: 1000px) {
+    
+    .menuItens{
+        display: none;
+    }
+
+    .container-principal{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menuItens{
+        display: none;
+    }
+
+    .container-principal{
+        width: 80%;
+    }
+
+    .filme-principal .titulo-principal{
+        font-size: 30px;
+    }
+
+    .descricao-principal{
+        font-size: 16px;
+    }
+
+    #botao2{
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .menuItens{
+        display: none;
+    }
+
+    .barraMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-principal{
+        width: 80%;
+    }
+
+    .filme-principal .titulo-principal{
+        font-size: 30px;
+    }
+
+    .descricao-principal{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .menuItens{
+        display: none;
+    }
+
+    .barraMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-principal{
+        width: 80%;
+    }
+
+    .filme-principal .titulo-principal{
+        font-size: 40px;
+    }
+
+    .descricao-principal{
+        display: none;
+    }
+}
